@@ -1,0 +1,10 @@
+{{!-- <h2 class="home-txt">
+  Enjoy!
+</h2> --}}
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li class="each-post">
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
