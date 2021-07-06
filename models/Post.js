@@ -13,7 +13,6 @@ class Post extends Model {
                 },
                 attributes: [
                     'id',
-                    'post_url',
                     'title',
                     'post_content',
                     'created_at',
@@ -45,13 +44,6 @@ Post.init(
             validate: {
                 len: [10]
             },
-        },
-        post_url: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isURL: true
-            }
         },
         user_id: {
             type: DataTypes.INTEGER,

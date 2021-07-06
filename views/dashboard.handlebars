@@ -6,11 +6,17 @@
       <label for="post-title">Title</label>
       <input type="text" placeholder="Title.." id="post-title" name="post-title" />
     </div>
-    <div>
-      <label for="post-text" type="text-area">Content</label>
-      <textarea id="post-text" placeholder="Content.." name="post-text"></textarea>
+    {{!-- <div class="link-handle">
+      <label for="post-url">Link</label>
+      <input id="post-url" name="post-url" />
+    </div> --}}
+    <div class="description-handle">
+      <label for="post-content">Content</label>
+      <textarea id="post-content" type="text" name="post-content" min-length= "10" placeholder="Must be at least 10 characters long"/></textarea>
     </div>
-    <button type="submit" class="btn">Create</button>
+    <div class="button">
+        <button type="submit" class="btn">Create</button>
+    </div>
   </form>
 </section>
 
